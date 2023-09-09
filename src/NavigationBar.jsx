@@ -1,20 +1,31 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
-    <Navbar bg="dark" variant="dark">
-      <Container>
-        <Navbar.Brand as={Link} to="/">Your Logo</Navbar.Brand>
-        <Nav className="mr-auto">
-          <Nav.Link as={Link} to="/">Home</Nav.Link>
-          <Nav.Link as={Link} to="/signup">Signup</Nav.Link>
-          <Nav.Link as={Link} to="/login">Signin</Nav.Link>
-        </Nav>
-      </Container>
-    </Navbar>
+      <div style={{zIndex:30, width:"100%" ,background:' rgba(0, 0, 0, 0.8)', padding:"20px 0", height:"60px"}}>
+         <nav className="navbar" style={{
+          display:'flex',
+          justifyContent:'space-between',
+          margin:'0 10px 20px 10px'
+
+
+         }}>
+              <h3 style={{
+                color: 'white',
+                marginBottom: '20px'
+              }}>Borl2Earn</h3>
+            
+           
+            <button
+             style={
+              {
+                marginBottom:'40px'
+              }
+             }  
+            >Sign up</button>
+        </nav>
+      </div>
   );
 };
 
